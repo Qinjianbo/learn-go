@@ -24,3 +24,15 @@ import (
 6. 包声明
 
 package main
+
+7. for循环 
+for ini; condition; post {
+
+}
+
+// 死循环
+
+for {
+
+}
+

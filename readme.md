@@ -48,3 +48,7 @@ var s string
 var s = ""
 var s string = ""
 ```
+
+9. 字符串处理包
+
+    strings

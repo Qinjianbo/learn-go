@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"strings"
+	"strconv"
 )
 
 func main() {
@@ -20,4 +21,12 @@ func main() {
 	fmt.Println(strings.Join(os.Args[1:], " "))
 
 	fmt.Println(os.Args[1:])
+
+	fmt.Println(os.Args[0])
+
+	seq := " "
+	for index, arg := range os.Args[1:] {
+		index_str := strconv.Itoa(index)
+		fmt.Println(index_str + seq + arg)
+	}
 }

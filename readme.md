@@ -52,3 +52,18 @@ var s string = ""
 9. 字符串处理包
 
     strings
+
+10. 类型转换包
+
+    strconv
+
+    ```
+    # string => int
+    int, err := strconv.Atoi(string)
+    # string => int64
+    int64, err := strconv.ParseInt(string, 10, 64)
+    # int => string
+    string := strconv.Itoa(int)
+    # int64 => string
+    string := strconv.FormatInt(int64, 10)
+    ```

@@ -67,3 +67,32 @@ var s string = ""
     # int64 => string
     string := strconv.FormatInt(int64, 10)
     ```
+
+11. make 函数
+
+```
+    make 可以用来新建map
+    counts := make(map[string]int)
+```
+
+12. 高效处理输入和输出的包 bufio
+
+```
+    input := bufio.NewScanner(os.Stdin)
+    line := input.Text()
+```
+
+13. verb(转义字符)
+
+```
+%d                    十进制整数
+%x, %o, %b            十六进制, 八进制, 二进制整数
+%f, %g, %e            浮点数：如 3.1415926, 3.141592653589793, 3.141593e+00
+%t                    布尔类型: true 或 false
+%c                    字符(Unicode 码点)
+%s                    字符串
+%q                    带引号字符串(如 "abc") 或者字符(如 'c')
+%v                    内置格式的任何值
+%T                    任何值类型
+%%                    百分号本身(无操作数)
+```

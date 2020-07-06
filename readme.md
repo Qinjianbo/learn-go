@@ -96,3 +96,24 @@ var s string = ""
 %T                    任何值类型
 %%                    百分号本身(无操作数)
 ```
+
+14. 打开文件
+
+```
+file := 'bufio_file_mock_1'
+f, err := os.Open(file)
+if err != nil {
+    fmt.Fprintf(os.Stderr, "dup2: %v\n", err)
+}
+// 处理f
+f.Close()
+```
+
+15. 从文件流读取
+
+```
+input := bufio.NewScanner(f)
+for input.Scan() {
+    fmt.Printf("%s\n", input.Text())
+}
+```

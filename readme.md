@@ -117,3 +117,12 @@ for input.Scan() {
     fmt.Printf("%s\n", input.Text())
 }
 ```
+
+16. 从文件读取 io/ioutil
+
+```
+data, err := ioutil.ReadFile(filename)
+// data 是可以转化成字符串的字符slice
+```
+
+17. bufio.Scanner io/ioutil.ReadFile io/ioutil.WriteFile 使用 *os.File 的 Read 和 Write 方法

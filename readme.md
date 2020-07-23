@@ -126,3 +126,8 @@ data, err := ioutil.ReadFile(filename)
 ```
 
 17. bufio.Scanner io/ioutil.ReadFile io/ioutil.WriteFile 使用 *os.File 的 Read 和 Write 方法
+
+18. 可导出/不可导出
+
+可导出: 首字母大写
+不可导出: 首字母小写（包外不可访问）

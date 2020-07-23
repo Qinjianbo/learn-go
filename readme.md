@@ -131,3 +131,10 @@ data, err := ioutil.ReadFile(filename)
 
 可导出: 首字母大写
 不可导出: 首字母小写（包外不可访问）
+
+19. 声明
+
+变量：var
+常量：const
+函数：func
+结构体：type

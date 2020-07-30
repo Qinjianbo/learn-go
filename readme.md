@@ -138,3 +138,23 @@ data, err := ioutil.ReadFile(filename)
 常量：const
 函数：func
 结构体：type
+
+20. 基本数据
+
+- 整数: 
+
+int8,int16,int32,int64|uint8,uint16,uint32,uint64
+
+int,uint: 特定平台，与原生有符号/无符号数相同
+
+rune: int32 同义词，常常指明一个值是Unicode码点
+
+byte: uint8 同义词, 常常用来强调一个值是原始数据，而非量值
+
+uintptr: 大小不明确，但可以存放下指针, 用于底层编程.
+
+- 浮点数
+
+float32,float64
+
+绝大多数情况下，选择使用float64，因为float32 会快速累计误差

@@ -27,4 +27,10 @@ func main() {
 
 	st2 := Student{"huba", 28, 1, "20120901"}
 	fmt.Println(st2)
+
+	var st2_pointer *Student = &st2
+	fmt.Println(st2_pointer)
+	fmt.Println(*st2_pointer)
+	fmt.Printf("%p", st2_pointer)
+
 }

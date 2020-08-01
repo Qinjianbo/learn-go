@@ -20,7 +20,11 @@ func main() {
 	fmt.Printf("%%\n")
 	fmt.Printf("%t\n", st)
 	fmt.Println(st)
-	fmt.Println(st.name)string(
+	fmt.Println(st.name)
 
-		)
+	st1 := Student{name: "huba"}
+	fmt.Println(st1)
+
+	st2 := Student{"huba", 28, 1, "20120901"}
+	fmt.Println(st2)
 }

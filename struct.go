@@ -1,8 +1,35 @@
 package main
 
-type Movie struct {
-	Title  string
-	Year   int  `json:"released"`
-	Color  bool `json:"color,omitempty"`
-	Actors []string
+import "fmt"
+
+type Student struct{
+	name string
+	age  int
+	sex  int
+	no   string
+}
+func main() {
+	var st Student
+	st.name = "huba"
+	st.age  = 28
+	st.sex  = 1
+	st.no   = "20120709"
+	fmt.Printf("%#v\n", st)
+	fmt.Printf("%v\n", st)
+	fmt.Printf("%T\n", st)
+	fmt.Printf("%%\n")
+	fmt.Printf("%t\n", st)
+	fmt.Println(st)
+	fmt.Println(st.name)
+
+	st1 := Student{name: "huba"}
+	fmt.Println(st1)
+
+	st2 := Student{"huba", 28, 1, "20120901"}
+	fmt.Println(st2)
+
+	var st2_pointer *Student = &st2
+	fmt.Println(st2_pointer)
+	fmt.Println(*st2_pointer)
+	fmt.Printf("%p", st2_pointer)
 }

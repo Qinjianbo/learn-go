@@ -32,5 +32,4 @@ func main() {
 	fmt.Println(st2_pointer)
 	fmt.Println(*st2_pointer)
 	fmt.Printf("%p", st2_pointer)
-
 }
